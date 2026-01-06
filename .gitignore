@@ -1,0 +1,139 @@
+# ====================================
+# Python
+# ====================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# ====================================
+# Jupyter Notebook
+# ====================================
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+*.ipynb_checkpoints
+
+# ====================================
+# 虛擬環境
+# ====================================
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+.conda/
+*.conda
+
+# ====================================
+# IDE / 編輯器
+# ====================================
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# ====================================
+# macOS
+# ====================================
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# ====================================
+# 模型檔案（非常大，不應上傳）
+# ====================================
+# 微調後的模型權重
+coffee-robot-functiongemma/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.h5
+
+# Hugging Face 快取
+.cache/
+~/.cache/huggingface/
+
+# ====================================
+# 訓練輸出與日誌
+# ====================================
+runs/
+logs/
+wandb/
+mlruns/
+lightning_logs/
+tensorboard/
+*.log
+
+# 訓練 checkpoints（通常很大）
+checkpoint-*/
+checkpoints/
+
+# ====================================
+# 評估輸出（可選保留）
+# ====================================
+# eval_base_model.json
+# eval_trained_model.json
+
+# ====================================
+# 臨時檔案
+# ====================================
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# ====================================
+# 資料集（可選，如果太大）
+# ====================================
+# 如果資料集太大，取消註解以下行
+# ollama_mcp_dataset.jsonl
+# *.jsonl
+
+# ====================================
+# 秘密與認證
+# ====================================
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+secrets.json
+credentials.json
+
+# ====================================
+# 其他
+# ====================================
+*.pkl
+*.pickle
+*.parquet
+*.feather
+*.arrow
