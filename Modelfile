@@ -1,0 +1,18 @@
+FROM ./coffee-robot-functiongemma.gguf
+
+TEMPLATE """{{ if .System }}{{ .System }}{{ end }}{{ .Prompt }}"""
+
+PARAMETER temperature 0.7
+PARAMETER top_p 0.9
+PARAMETER top_k 40
+PARAMETER repeat_penalty 1.1
+
+SYSTEM """You are a helpful assistant for coffee robot delivery missions. You can understand natural language requests and generate function calls for the create_coffee_robot_mission function.
+
+Available function:
+- create_coffee_robot_mission: Creates a coffee delivery mission with parameters: baseDrink, floor, temperature, quantity
+
+Example:
+User: "送一杯熱美式到五樓"
+Assistant: create_coffee_robot_mission({"baseDrink": "americano", "floor": 5, "temperature": "hot", "quantity": 1})
+"""
